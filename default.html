@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style media="screen">
+  *{
+    margin:0px;
+    padding: 0px;
+    width: 100%;
+    box-sizing: border-box;
+
+  }
+
+  nav{
+  background-color: #4a98ff;
+  padding: 10px;
+  text-align: left;
+  border:1px solid red;
+  float:right;
+  width: 100%;
+  }
+
+  nav > ul{
+    width:800px;
+    text-align: center;
+    float: right;
+
+  }
+
+
+  nav > ul > li{
+    display: inline-table;
+    vertical-align: top;
+    border:1px solid #284bb4;
+    width:110px;
+    margin:0px;
+    padding: 5px;
+  }
+  nav > ul > li > a {
+    text-decoration: none;
+    color:#f2f2f2;
+  }
+
+
+  header{
+    background-color:#252525;
+    color:#f2f2f2;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+  }
+
+  header > h2{
+    line-height: 175%;
+
+  }
+
+
+
+  section{
+    border:1px solid red;
+    min-height: 500px;
+    padding: 25px;
+    font-size: 1.5em;
+    color:#252525;
+  }
+
+  .imagensaludar{
+    width: 100%;
+    border:1px solid red;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+  }
+
+  .imagensaludar > img{
+    width: 300px;
+
+  }
+</style>
+
+<script type="text/javascript">
+
+function saludareli(){
+  alert("la imagen mas violenta del mundo");
+  var wntonto = document.getElementsByClassName("imagensaludar");
+  wntonto[0].style.display = "inline-table";
+}
+
+</script>
+
+<body>
+  <header>
+    <h2>hola eli <3</h2>
+    <nav>
+      <ul>
+        <li><a href="http://jkanime.net/" target="_blank">JkAnime</a></li>
+        <li><a href="#" onclick="javascript:saludareli();">Saludar</a></li>
+        <li><a href="#">opcion 3</a></li>
+        <li><a href="#">opcion 4</a></li>
+        <li><a href="#">opcion 5</a></li>
+        <li><a href="#">opcion 6</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <section>
+    contenido cuerpo donde esta todo el cuerpo
+    <div class="imagensaludar">
+      <img src="saludar.jpg" alt="imagen wn saludando">
+    </div>
+  </section>
+  <footer>
+    pie de pagina por lo general van direcciones contacto derechos de autor etc
+  </footer>
+</body>
+</html>
